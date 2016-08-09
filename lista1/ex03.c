@@ -6,7 +6,7 @@ int main(){
 	scanf("%lf",&salario);
 
 	novoSalario = (salario*0.25)+salario;
-	printf("%lf",novoSalario);
+	printf("%.2lf\n",novoSalario);
 	
 	return 0;
 }
