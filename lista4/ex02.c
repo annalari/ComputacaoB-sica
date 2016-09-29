@@ -1,29 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define MAX 10
-
-
-
-void reverso(){
-  int array[MAX];
-  int i=0;
-
-  for(i=0; array[i] >= 0 && i <= MAX; i++){
-     scanf("%d",&array[i]);
-}
-	
-	int j;
-	for(j=i; j >= 0; j--)
-		printf(" %d \n",array[j]);
-	
-
-}
-
-
+#include<stdio.h>
+#include<stdlib.h>
 
 int main(){
-
-  reverso();
-
+	int numero[300],l=0, i=0, j=0;
+	do{
+		scanf("%d",&l);
+		if(l>=0){
+			numero[i] = l;
+			i++;
+		}
+	}while(l>=0);
+	for(j=i-1; j>=0; j--){
+		printf("%d\n", numero[j]);
+	}	
+	
+return 0;
 
 }
