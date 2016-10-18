@@ -22,18 +22,18 @@ int main(){
 
   for (i=0; i< LINHAS; i++){
       for(j=0;j<COLUNAS; j++){
-        if(i<=4 && j <= 4){
+        if(i<=4 && j<=4){
           if(matriz[i][j] > max_quad[0])
               max_quad[0] = matriz[i][j];
 
         }
-        else if(i<=4 && j >= 5){
+        else if(i>=5 && j<=4){
           if(matriz[i][j] > max_quad[1])
               max_quad[1] = matriz[i][j];
 
 
        }
-       else if(i>=5 && j <= 4){
+       else if(i<=4 && j>=5){
          if(matriz[i][j] > max_quad[2])
              max_quad[2] = matriz[i][j];
 
